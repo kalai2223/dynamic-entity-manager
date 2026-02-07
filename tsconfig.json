@@ -9,6 +9,23 @@
     }
   ],
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@features/*": [
+        "src/features/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ]
+    }
   }
 }
