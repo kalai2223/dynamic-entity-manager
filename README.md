@@ -1,6 +1,6 @@
 #  Dynamic Entity Manager
 
-A metadata-driven, extensible CRUD platform built with **React, TypeScript, Redux Toolkit (RTK Query), Zod, and Ant Design**.
+A metadata-driven, extensible CRUD platform built with **React, TypeScript, Redux Toolkit, Zod, and Ant Design**.
 
 The application dynamically generates forms and tables from a centralized configuration file, enabling scalable entity management with minimal code changes.
 
@@ -17,22 +17,22 @@ Instead of hardcoding form fields and table columns, the UI is generated dynamic
 
 ##  Architecture
 
-Entity Config (Single Source of Truth)
+Entity Config
         ↓
 Dynamic Form Renderer
         ↓
 Dynamic Table Column Builder
         ↓
-RTK Query API Layer
+Service Layer (axios/fetch)
         ↓
 JSON Server
+
 
 ### Key Design Principles
 
 - Single source of truth for field definitions
 - No duplication between form and table configuration
 - Entity-agnostic API handling
-- Scalable state management with RTK Query
 - Clear separation between UI, configuration, and API layers
 
 ---
@@ -68,18 +68,22 @@ JSON Server
 src/
 ├── app/
 │   └── store.ts
-├── features/
-│   └── api/
-│       └── baseApi.ts
+|   └── hook.ts
+├── api/
+│   └── baseApi.ts
 ├── config/
 │   └── user.config.ts
 ├── components/
 │   ├── DynamicForm/
 │   └── EntityTable/
+├── features/
+│   └── entity/
+│       └── entitySlice.ts
 ├── pages/
 │   └── UsersPage.tsx
 ├── types/
 └── utils/
+│   └── buildZodSchema.ts
 
 ---
 

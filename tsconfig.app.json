@@ -41,6 +41,12 @@
       "@features/*": [
         "src/features/*"
       ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ]
     }
   },
   "include": ["src"]

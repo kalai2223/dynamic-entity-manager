@@ -12,6 +12,8 @@ export default defineConfig({
       "@features": path.resolve(__dirname, "src/features"),
       "@app": path.resolve(__dirname, "src/app"),
       "@api": path.resolve(__dirname, "src/api"),
+      "@types":path.resolve(__dirname, "src/types"),
+      "@pages": path.resolve(__dirname, "src/pages"),
     },
   },
 });
