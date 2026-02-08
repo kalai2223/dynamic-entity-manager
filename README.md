@@ -42,7 +42,6 @@ JSON Server
 - React (Vite)
 - TypeScript
 - Redux Toolkit
-- RTK Query
 - Ant Design
 - Zod (schema validation)
 - JSON Server (mock backend)
@@ -122,7 +121,7 @@ pnpm install
 
 Create a `.env` file:
 
-VITE_API_BASE_URL=http://localhost:3000
+VITE_API_BASE_URL=http://localhost:10000
 
 ###  Run Development Server
 
@@ -132,24 +131,4 @@ pnpm run dev
 
 pnpm run server
 
----
-
-## Future Enhancements
-
-- Role-based field visibility
-- Dynamic entity switching
-- Server-driven schema support
-- Pagination & sorting
-- Unit and integration testing
-- Docker deployment
-
----
-
-##  What This Project Demonstrates
-
-- Scalable frontend architecture
-- Metadata-driven UI generation
-- Advanced RTK Query usage
-- Clean separation of concerns
-- Enterprise-ready design thinking
 
