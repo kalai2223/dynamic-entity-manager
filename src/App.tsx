@@ -55,6 +55,7 @@ function App() {
         <Content
           className="content"
         >
+          <UsersPage />
         </Content>
       </Layout>
     </ConfigProvider>
