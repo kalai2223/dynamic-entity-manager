@@ -19,7 +19,6 @@ export const userConfig: readonly FieldConfig[] = [
           "First name must contain only letters and spaces",
       },
     },
-    defaultValue: "Namesssssssss",
     showInTable: true,
   },
 
