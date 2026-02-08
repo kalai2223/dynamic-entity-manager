@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server": "json-server --watch db.json --port 3000"
+    "server": "json-server --watch db.json --port ${PORT:-10000}"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
