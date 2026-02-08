@@ -144,7 +144,7 @@ export default function UsersPage() {
           </Button>
         </header>
 
-        <main style={{ overflowX: "auto" }}>
+        <main>
           <EntityTable<UserEntity>
             fields={userConfig}
             data={users}
